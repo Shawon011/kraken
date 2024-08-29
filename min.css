@@ -42,6 +42,9 @@
 /*========= Price Pages========  */
 
 /* Hero section */
+.hero {
+    padding-top: 11rem;
+}
 .tab-btn {
     color: #2125467b;
 }
