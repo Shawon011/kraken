@@ -12,5 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.4.10"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.4"
   }
 }

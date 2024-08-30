@@ -1213,6 +1213,13 @@ video {
   font-family: "Poppins", sans-serif;
 }
 
+:root {
+  --color-primary: #44d4fd;
+  --color-label: #a7a7a7;
+  --color-text: #e2dede;
+  --font-family: "Poppins";
+}
+
 /* Header section */
 
 .menu-item {
@@ -1380,6 +1387,12 @@ tbody button {
 
 .green {
   color: rgb(9, 205, 9);
+}
+
+/* chart */
+
+.apexcharts-menu-icon {
+  display: none;
 }
 
 .hover\:bg-\[\#6421f4\]:hover {
