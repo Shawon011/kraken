@@ -670,10 +670,6 @@ video {
   margin-top: 13rem;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
 .mt-8 {
   margin-top: 2rem;
 }
@@ -902,14 +898,14 @@ video {
   background-color: rgb(236 235 249 / var(--tw-bg-opacity));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-gray-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
-}
-
-.bg-gray-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
 .bg-slate-500 {
@@ -1133,19 +1129,14 @@ video {
   color: #ffffffad;
 }
 
-.text-blue-500 {
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
-}
-
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.text-gray-600 {
+.text-gray-500 {
   --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .text-gray-700 {
@@ -1214,7 +1205,7 @@ video {
 }
 
 :root {
-  --color-primary: #44d4fd;
+  --color-primary: #7132f5;
   --color-label: #a7a7a7;
   --color-text: #e2dede;
   --font-family: "Poppins";
@@ -1386,10 +1377,21 @@ tbody button {
 }
 
 .green {
-  color: rgb(9, 205, 9);
+  color: rgb(7 152 85);
+  font-weight: 500;
+  font-size: 16px;
 }
 
 /* chart */
+
+.top-area button {
+  padding: 5px 12px;
+  border-radius: 2px;
+}
+
+.active-chat {
+  background-color: #6b7280;
+}
 
 .apexcharts-menu-icon {
   display: none;
@@ -1446,6 +1448,12 @@ body .apexcharts-tooltip.apexcharts-theme-light {
 .apexcharts-tooltip-title,
   .apexcharts-zaxistooltip-bottom.apexcharts-theme-light {
   display: none;
+}
+
+.earing-itm {
+  border: 1px solid rgb(229, 224, 224);
+  border-radius: 50%;
+  padding: 4px;
 }
 
 .hover\:bg-\[\#6421f4\]:hover {

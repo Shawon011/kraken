@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    
     "dev": "tailwindcss -i ./min.css -o ./style.css --watch"
   },
   "keywords": [],
