@@ -694,6 +694,14 @@ video {
   display: none;
 }
 
+.h-\[85vh\] {
+  height: 85vh;
+}
+
+.h-\[90vh\] {
+  height: 90vh;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -826,6 +834,10 @@ video {
   gap: 3rem;
 }
 
+.gap-20 {
+  gap: 5rem;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -876,6 +888,11 @@ video {
 .border-green-700 {
   --tw-border-opacity: 1;
   border-color: rgb(21 128 61 / var(--tw-border-opacity));
+}
+
+.border-slate-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(100 116 139 / var(--tw-border-opacity));
 }
 
 .bg-\[\#202333\] {
@@ -1085,6 +1102,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .text-\[\#0074a2\] {
@@ -1479,6 +1500,11 @@ body .apexcharts-tooltip.apexcharts-theme-light {
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-slate-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
 .hover\:text-\[\#ffffff97\]:hover {
   color: #ffffff97;
 }
@@ -1511,6 +1537,22 @@ body .apexcharts-tooltip.apexcharts-theme-light {
   .sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -1614,6 +1656,11 @@ body .apexcharts-tooltip.apexcharts-theme-light {
 
   .lg\:text-\[2\.5rem\] {
     font-size: 2.5rem;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .lg\:hover\:scale-110:hover {
