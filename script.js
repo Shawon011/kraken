@@ -153,17 +153,19 @@ chart.render();
 const modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-const btn = document.getElementById("openModalBtn");
+const btnAll = document.querySelectorAll(".openModalBtn");
 
 // Get the <span> element that closes the modal
 const closeBtn = document.querySelector(".closeBtn");
 
 // When the user clicks the button, open the modal
-btn.onclick = function () {
-  modal.classList.remove("hidden");
-  modal.classList.add("flex");
-  document.body.style.overflow = "hidden"; // Disable background scrolling
-};
+btnAll.forEach((btn) => {
+  btn.onclick = function () {
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+    document.body.style.overflow = "hidden"; // Disable background scrolling
+  };
+});
 
 // When the user clicks on <span> (x), close the modal
 closeBtn.onclick = function () {
