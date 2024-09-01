@@ -275,3 +275,13 @@ body .apexcharts-tooltip.apexcharts-theme-light {
 .btnActive {
   background-color: #7132f5;
 }
+
+@media screen and (max-width: 600px) {
+  .wallet button {
+    height: 100px;
+    padding: 12px 15px;
+    border-radius: 20px;
+    transition: all 0.3s;
+    justify-content: center;
+  }
+}

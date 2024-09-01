@@ -89,84 +89,101 @@
     >
       <!-- Modal content -->
       <div
-        class="bg-white p-14 rounded-lg shadow-lg m-auto container relative max-w-fit"
+        class="bg-white sm:p-14 p-4 rounded-lg shadow-lg m-auto container relative max-w-fit"
       >
         <!-- Close Button -->
         <span
-          class="closeBtn absolute top-2 right-2 text-gray-500 hover:text-gray-700 cursor-pointer text-2xl"
+          class="closeBtn absolute top-2 right-2 text-gray-500 hover:text-gray-700 cursor-pointer text-4xl"
           >&times;</span
         >
 
-        <div class="wallet-area">
+        <div class="wallet-area overflow-scroll sm:p-0 py-10">
           <h1 class="text-xl font-medium">What wallet you use?</h1>
           <div
-            class="grid lg:grid-cols-5 md:grid-cols-4 grid-cols-2 gap-4 wallet mt-5 itemContainer"
+            class="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-4 gap-4 wallet mt-5 itemContainer"
           >
             <button class="btn item flex flex-col items-center">
-              <div class="w-24 h-24">
+              <div class="sm:w-24 w-full sm:h-24">
                 <img class="w-full h-full" src="assets/wallet1.jpeg" alt="" />
               </div>
-              <p class="mt-2" data-wallet="coinbase wallet">Coinbase Wallet</p>
+              <p
+                class="mt-2 sm:text-base text-xs"
+                data-wallet="coinbase wallet"
+              >
+                Coinbase Wallet
+              </p>
             </button>
 
             <button class="btn item flex flex-col items-center">
-              <div class="w-24 h-24">
+              <div class="sm:w-24 w-full sm:h-24">
                 <img
                   class="w-full h-full object-cover"
                   src="assets/wallet2.jpeg"
                   alt=""
                 />
               </div>
-              <p class="mt-2" data-wallet="metamask">Metamask</p>
+              <p class="mt-2 sm:text-base text-xs" data-wallet="metamask">
+                Metamask
+              </p>
             </button>
 
             <button class="btn item flex flex-col items-center">
-              <div class="w-24 h-24">
+              <div class="sm:w-24 w-full sm:h-24">
                 <img class="w-full h-full" src="assets/wallet3.jpeg" alt="" />
               </div>
-              <p class="mt-2" data-wallet="phantom">Phantom</p>
+              <p class="mt-2 sm:text-base text-xs" data-wallet="phantom">
+                Phantom
+              </p>
             </button>
 
             <button class="btn item flex flex-col items-center">
-              <div class="w-24 h-24">
+              <div class="sm:w-24 w-full sm:h-24">
                 <img class="w-full h-full" src="assets/wallet4.jpeg" alt="" />
               </div>
-              <p class="mt-2" data-wallet="trust">Trust</p>
+              <p class="mt-2 sm:text-base text-xs" data-wallet="trust">Trust</p>
             </button>
 
             <button class="btn item flex flex-col items-center">
-              <div class="w-24 h-24">
+              <div class="sm:w-24 w-full sm:h-24">
                 <img class="w-full h-full" src="assets/wallet5.jpeg" alt="" />
               </div>
-              <p class="mt-2" data-wallet="trezo">Trezo</p>
+              <p class="mt-2 sm:text-base text-xs" data-wallet="trezo">Trezo</p>
             </button>
 
             <button class="btn item flex flex-col items-center">
-              <div class="w-24 h-24">
+              <div class="sm:w-24 w-full sm:h-24">
                 <img class="w-full h-full" src="assets/wallet6.jpeg" alt="" />
               </div>
-              <p class="mt-2" data-wallet="ledger">Ledger</p>
+              <p class="mt-2 sm:text-base text-xs" data-wallet="ledger">
+                Ledger
+              </p>
             </button>
 
             <button class="btn item flex flex-col items-center">
-              <div class="w-24 h-24">
+              <div class="sm:w-24 w-full sm:h-24">
                 <img class="w-full h-full" src="assets/wallet7.jpeg" alt="" />
               </div>
-              <p class="mt-2" data-wallet="electrum">Electrum</p>
+              <p class="mt-2 sm:text-base text-xs" data-wallet="electrum">
+                Electrum
+              </p>
             </button>
 
             <button class="btn item flex flex-col items-center">
-              <div class="w-24 h-24">
+              <div class="sm:w-24 w-full sm:h-24">
                 <img class="w-full h-full" src="assets/wallet8.jpeg" alt="" />
               </div>
-              <p class="mt-2" data-wallet="atomic">Atomic</p>
+              <p class="mt-2 sm:text-base text-xs" data-wallet="atomic">
+                Atomic
+              </p>
             </button>
 
             <button class="btn item flex flex-col items-center">
-              <div class="w-24 h-24">
+              <div class="sm:w-24 w-full sm:h-24">
                 <img class="w-full h-full" src="assets/wallet9.jpeg" alt="" />
               </div>
-              <p class="mt-2" data-wallet="exodus">Exodus</p>
+              <p class="mt-2 sm:text-base text-xs" data-wallet="exodus">
+                Exodus
+              </p>
             </button>
 
             <button class="btn item flex flex-col items-center">
