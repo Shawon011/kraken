@@ -592,8 +592,24 @@ video {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
+}
+
+.inset-0 {
+  inset: 0px;
+}
+
+.right-2 {
+  right: 0.5rem;
+}
+
+.top-2 {
+  top: 0.5rem;
 }
 
 .z-50 {
@@ -670,6 +686,10 @@ video {
   margin-top: 13rem;
 }
 
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
@@ -694,12 +714,16 @@ video {
   display: none;
 }
 
+.h-24 {
+  height: 6rem;
+}
+
 .h-\[85vh\] {
   height: 85vh;
 }
 
-.h-\[90vh\] {
-  height: 90vh;
+.h-full {
+  height: 100%;
 }
 
 .w-10 {
@@ -726,12 +750,12 @@ video {
   width: 66.666667%;
 }
 
-.w-2\/4 {
-  width: 50%;
-}
-
 .w-24 {
   width: 6rem;
+}
+
+.w-3\/4 {
+  width: 75%;
 }
 
 .w-4\/5 {
@@ -766,8 +790,25 @@ video {
   max-width: 24rem;
 }
 
+.max-w-fit {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
 .grow {
   flex-grow: 1;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-cols-3 {
@@ -810,6 +851,10 @@ video {
   gap: 0.5rem;
 }
 
+.gap-20 {
+  gap: 5rem;
+}
+
 .gap-3 {
   gap: 0.75rem;
 }
@@ -828,14 +873,6 @@ video {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-\[3rem\] {
-  gap: 3rem;
-}
-
-.gap-20 {
-  gap: 5rem;
 }
 
 .rounded-2xl {
@@ -885,6 +922,11 @@ video {
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
+.border-gray-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity));
+}
+
 .border-green-700 {
   --tw-border-opacity: 1;
   border-color: rgb(21 128 61 / var(--tw-border-opacity));
@@ -920,6 +962,11 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-gray-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
 .bg-gray-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
@@ -935,12 +982,25 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
+}
+
+.p-14 {
+  padding: 3.5rem;
+}
+
 .p-5 {
   padding: 1.25rem;
 }
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .px-14 {
@@ -976,11 +1036,6 @@ video {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
-}
-
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
 }
 
 .py-10 {
@@ -1092,10 +1147,6 @@ video {
   font-weight: 500;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
 .font-medium {
   font-weight: 500;
 }
@@ -1175,9 +1226,9 @@ video {
   color: rgb(21 128 61 / var(--tw-text-opacity));
 }
 
-.text-purple-700 {
+.text-red-600 {
   --tw-text-opacity: 1;
-  color: rgb(126 34 206 / var(--tw-text-opacity));
+  color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -1477,6 +1528,30 @@ body .apexcharts-tooltip.apexcharts-theme-light {
   padding: 4px;
 }
 
+.wallet button {
+  height: 200px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  transition: all 0.3s;
+  justify-content: center;
+}
+
+.wallet button:hover {
+  box-shadow: 1px 1px 5px 1px #2b408f36;
+}
+
+.wallet button img {
+  border-radius: 20px;
+}
+
+.active-btn {
+  border: 1px solid #7132f5;
+}
+
+.btnActive {
+  background-color: #7132f5;
+}
+
 .hover\:bg-\[\#6421f4\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(100 33 244 / var(--tw-bg-opacity));
@@ -1489,10 +1564,6 @@ body .apexcharts-tooltip.apexcharts-theme-light {
 
 .hover\:bg-\[\#ffffff38\]:hover {
   background-color: #ffffff38;
-}
-
-.hover\:bg-\[\#ffffffc9\]:hover {
-  background-color: #ffffffc9;
 }
 
 .hover\:bg-gray-300:hover {
@@ -1545,6 +1616,10 @@ body .apexcharts-tooltip.apexcharts-theme-light {
     display: flex;
   }
 
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -1582,16 +1657,8 @@ body .apexcharts-tooltip.apexcharts-theme-light {
     display: grid;
   }
 
-  .lg\:w-2\/5 {
-    width: 40%;
-  }
-
   .lg\:w-3\/4 {
     width: 75%;
-  }
-
-  .lg\:w-3\/5 {
-    width: 60%;
   }
 
   .lg\:w-4\/6 {
@@ -1606,10 +1673,6 @@ body .apexcharts-tooltip.apexcharts-theme-light {
     width: 20rem;
   }
 
-  .lg\:w-9\/12 {
-    width: 75%;
-  }
-
   .lg\:w-\[26rem\] {
     width: 26rem;
   }
@@ -1618,20 +1681,16 @@ body .apexcharts-tooltip.apexcharts-theme-light {
     width: 32rem;
   }
 
+  .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
   .lg\:items-start {
     align-items: flex-start;
   }
 
-  .lg\:justify-end {
-    justify-content: flex-end;
-  }
-
   .lg\:pt-32 {
     padding-top: 8rem;
-  }
-
-  .lg\:text-left {
-    text-align: left;
   }
 
   .lg\:text-2xl {
@@ -1642,11 +1701,6 @@ body .apexcharts-tooltip.apexcharts-theme-light {
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
-  }
-
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .lg\:text-5xl {

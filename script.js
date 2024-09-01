@@ -20,6 +20,9 @@ tabBtn.forEach((tab, index)=> {
     })
 })
 
+
+
+
 // Chart
 let primaryColor = getComputedStyle(document.documentElement)
   .getPropertyValue("--color-primary")
@@ -145,7 +148,88 @@ let barOptions = {
   },
 };
 
+
 let chart = new ApexCharts(document.querySelector(".chart-area"), barOptions);
 
 chart.render();
+
   
+
+// Modal
+// Get the modal
+const modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+const btn = document.getElementById("openModalBtn");
+
+// Get the <span> element that closes the modal
+const closeBtn = document.querySelector(".closeBtn");
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+    document.body.style.overflow = "hidden"; // Disable background scrolling
+}
+
+// When the user clicks on <span> (x), close the modal
+closeBtn.onclick = function() {
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+    document.body.style.overflow = "auto"; // Enable background scrolling
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target === modal) {
+        modal.classList.add("hidden");
+        document.body.style.overflow = "auto"; // Enable background scrolling
+    }
+}
+
+
+// active button
+const buttons = document.querySelectorAll('.btn');
+
+// Add a click event listener to each button
+buttons.forEach(button => {
+    button.addEventListener('click', function() {
+        // Remove the 'active' class from all buttons
+        buttons.forEach(btn => btn.classList.remove('active-btn'));
+
+        // Add the 'active' class to the clicked button
+        this.classList.add('active-btn');
+    });
+});
+
+
+
+// Get all items and the action button
+const items = document.querySelectorAll('.item');
+const actionButton = document.getElementById('actionButton');
+
+// Add a click event listener to each item
+items.forEach(item => {
+    item.addEventListener('click', function() {
+        // Remove the 'active' class from all items
+        items.forEach(itm => itm.classList.remove('active-btn'));
+
+        // Add the 'active' class to the clicked item
+        this.classList.add('active-btn');
+
+        // Enable the action button
+        actionButton.classList.remove('bg-gray-400', 'text-gray-700', 'cursor-not-allowed');
+        actionButton.classList.add('bg-blue-500', 'text-white', 'btnActive');
+        actionButton.disabled = false;
+    });
+});
+
+
+// wallet area hidden
+const walletArea = document.querySelector('.wallet-area')
+const inputFild = document.querySelector('#input-fild')
+actionButton.addEventListener('click', ()=> {
+  walletArea.classList.add('hidden')
+  inputFild.classList.remove('hidden')
+})
+

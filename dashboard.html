@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+    <script src="script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 </head>
 <body class="bg-black">
@@ -31,7 +32,7 @@
 
 
 
-
+<!-- Chart Section -->
 <div class="chart container m-auto w-2/3 mt-20">
     <div class="border border-gray-400 rounded-xl p-5">
         <div class=" flex justify-between items-center mb-4 top-area">
@@ -41,7 +42,7 @@
                     <p class="text-gray-400">10$</p>
                 </div>
                 <div class="text-white">
-                    <a href="#" class="text-sm border border-slate-500 py-2 hover:bg-slate-500 px-5 rounded-xl duration-100 uppercase">
+                    <a href="#" id="openModalBtn" class="text-sm border border-slate-500 py-2 hover:bg-slate-500 px-5 rounded-xl duration-100 uppercase">
                         Withdraw Rewards
                     </a>
                 </div>
@@ -64,6 +65,99 @@
         </div>
     </div>
 </div>
+
+<!-- Modal Section -->
+
+<!-- The Modal -->
+<div id="myModal" class="fixed inset-0 hidden z-50 items-center justify-center bg-black bg-opacity-50">
+    <!-- Modal content -->
+    <div class="bg-white p-14 rounded-lg shadow-lg m-auto container relative max-w-fit">
+        <!-- Close Button -->
+        <span class="closeBtn absolute top-2 right-2 text-gray-500 hover:text-gray-700 cursor-pointer text-2xl">&times;</span>
+        
+        <div class="wallet-area">
+            <h1 class="text-xl font-medium">What wallet you use?</h1>
+            <div class="grid lg:grid-cols-5 md:grid-cols-4 grid-cols-2 gap-4 wallet mt-5 itemContainer">
+                    <button class="btn item flex flex-col items-center">
+                        <div class="w-24 h-24">
+                            <img class="w-full h-full" src="assets/wallet1.jpeg" alt="">
+                        </div>
+                        <p class="mt-2">Coinbase Wallet</p>
+                    </button>
+
+                    <button class="btn item flex flex-col items-center">
+                        <div class="w-24 h-24">
+                            <img class="w-full h-full" src="assets/wallet2.jpeg" alt="">
+                        </div>
+                        <p class="mt-2">Metamask</p>
+                    </button>
+
+                    <button class="btn item flex flex-col items-center">
+                        <div class="w-24 h-24">
+                            <img class="w-full h-full" src="assets/wallet3.jpeg" alt="">
+                        </div>
+                        <p class="mt-2">Phantom</p>
+                    </button>
+
+                    <button class="btn item flex flex-col items-center">
+                        <div class="w-24 h-24">
+                            <img class="w-full h-full" src="assets/wallet4.jpeg" alt="">
+                        </div>
+                        <p class="mt-2">Trust</p>
+                    </button>
+
+                    <button class="btn item flex flex-col items-center">
+                        <div class="w-24 h-24">
+                            <img class="w-full h-full" src="assets/wallet5.jpeg" alt="">
+                        </div>
+                        <p class="mt-2">Trezo</p>
+                    </button>
+
+                    <button class="btn item flex flex-col items-center"> 
+                        <div class="w-24 h-24">
+                            <img class="w-full h-full" src="assets/wallet6.jpeg" alt="">
+                        </div>
+                        <p class="mt-2">Ledger</p>
+                    </button>
+
+                    <button class="btn item flex flex-col items-center">
+                        <div class="w-24 h-24">
+                            <img class="w-full h-full" src="assets/wallet7.jpeg" alt="">
+                        </div>
+                        <p class="mt-2">Electrum</p>
+                    </button>
+
+                    <button class="btn item flex flex-col items-center">
+                        <div class="w-24 h-24">
+                            <img class="w-full h-full" src="assets/wallet8.jpeg" alt="">
+                        </div>
+                        <p class="mt-2">Atomic</p>
+                    </button>
+
+                    <button class="btn item flex flex-col items-center">
+                        <div class="w-24 h-24">
+                            <img class="w-full h-full" src="assets/wallet9.jpeg" alt="">
+                        </div>
+                        <p class="mt-2">Exodus</p>
+                    </button>
+
+                    <button class="btn item flex flex-col items-center">
+                        <p>Others</p>
+                    </button>
+            </div>
+            <div class="text-center mt-7">
+                <button id="actionButton" class="text-lg bg-gray-400 text-white  py-3 px-10 rounded-lg cursor-not-allowed" disabled>Next</button>
+            </div>
+        </div>
+
+        <!-- Input area -->
+        <div id="input-fild" class="hidden">
+            <p>Whats your name?</p>
+            <input type="text" class="border border-gray-600 rounded-md py-2 px-2 text-sm mt-2" placeholder="Whats your name?">
+        </div>
+    </div>
+</div>
+
 
 
 <!-- Earning Section -->
@@ -140,7 +234,5 @@
 </div>
 
 
-
-<script src="script.js"></script>
 </body>
 </html>

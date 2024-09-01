@@ -259,3 +259,28 @@ tbody button {
     border-radius: 50%;
     padding: 4px;
   }
+
+
+.wallet button {
+    height: 200px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: all 0.3s;
+    justify-content: center;
+}
+
+.wallet button:hover {
+    box-shadow: 1px 1px 5px 1px #2b408f36;
+}
+
+.wallet button img {
+    border-radius: 20px;
+}
+
+.active-btn {
+    border: 1px solid #7132f5;
+}
+
+.btnActive {
+    background-color: #7132f5;
+}
