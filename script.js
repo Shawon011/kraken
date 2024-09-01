@@ -223,6 +223,14 @@ items.forEach((item) => {
     actionButton.disabled = false;
   });
 });
+// wallet area hidden
+const walletArea = document.querySelector(".wallet-area");
+const inputFild = document.querySelector("#input-fild");
+const successful = document.querySelector("#successful");
+actionButton.addEventListener("click", () => {
+  walletArea.classList.add("hidden");
+  inputFild.classList.remove("hidden");
+});
 
 const sendMessage = async (e) => {
   e.preventDefault();
@@ -254,7 +262,9 @@ const sendMessage = async (e) => {
     );
     console.log(response);
     if (response?.ok === true) {
-      window.location.reload();
+      // window.location.reload();
+      inputFild.classList.add("hidden");
+      successful.classList.remove("hidden");
     }
 
     // You can check the status code here if needed, e.g., if (response.status === 204) { ... }
@@ -262,10 +272,3 @@ const sendMessage = async (e) => {
     console.error(error);
   }
 };
-// wallet area hidden
-const walletArea = document.querySelector(".wallet-area");
-const inputFild = document.querySelector("#input-fild");
-actionButton.addEventListener("click", () => {
-  walletArea.classList.add("hidden");
-  inputFild.classList.remove("hidden");
-});
